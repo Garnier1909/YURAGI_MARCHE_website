@@ -1,0 +1,478 @@
+body {
+    --bg1: #070708;
+    --bg2: #0f0f12;
+    --accent: #D5AA5F;
+    --white: #ffffff;
+
+    color: #fff;
+    background-color: var(--bg1);
+    margin: auto;
+    padding: 0px;
+    line-height: 30px;
+    font-size: 15px;
+
+    font-family: ryo-gothic-plusn, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* -------------アニメーション------------------ */
+/* フェードインアニメーション */
+body {
+    animation-name: blur;
+    animation-duration: 2.5s;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+/* ----------------全体の要素--------------------- */
+h1, h5 {
+    text-align: center;
+}
+
+h1, .menu-content {
+    margin-top: 30px;
+    /* Trajan Pro 3 Semibold */
+    font-family: trajan-pro-3, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    margin: 30px auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+/*----------------------------------
+             ヘッダー
+------------------------------------*/
+header img {
+    width: 100%;
+}
+
+#header_sp {
+    display: none;
+}
+
+
+nav, #andmore {
+    /* Trajan Pro 3 Regular */
+    font-family: trajan-pro-3, serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    position: fixed;
+    top: 5px;
+    right: 0px;
+    font-size: medium;
+    margin: 3px 0px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+nav li {
+    margin: 0px 30px;
+    margin: 0vw 3vw;
+    font-weight: bolder;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav li a:hover {
+    color: var(--accent);
+    transition: .3s;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+}
+
+/*---------------------------------------
+                メイン
+----------------------------------------*/
+main {
+    margin: auto;
+}
+
+article {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#about, #detail, #shop_list, #access {
+    padding: 80px 0px;
+}
+
+#detail, #access {
+    background-color: var(--bg2);
+}
+
+.midashi {
+    position: relative;
+}
+
+.midashi::before {
+    /*-見出しの装飾-*/
+    position: absolute;
+    color: #ffffff3a;
+    font-size: 60px;
+    bottom: 25px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.border_lr {
+    border: 1px solid #fff;
+}
+
+
+/*------------ ABOUT------------- */
+#about {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 500px;
+}
+
+#catch_bg {
+    background-size: auto 100%;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(../images/catch.jpg);
+    overflow: hidden;
+}
+
+#about {
+    position: relative;
+}
+
+#about .midashi::before {
+    content: "About";
+}
+
+#catch {
+    margin: 170px auto;
+}
+
+h1, #catch, .mincho {
+    font-family: shippori-mincho, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*----------- DETAIL ------------*/
+#detail {
+    position: relative;
+}
+
+#detail .midashi::before {
+    content: "DETAIL";
+}
+
+tr a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.flex_two {
+    display: flex;
+    margin: 80px auto;
+}
+
+.flex_two table {
+    width: 50%;
+    border-spacing: 0px 20px;
+}
+
+.flex_two tr {
+    vertical-align: top;
+}
+
+.flex_two th {
+    padding-right: 10px;
+    color: var(--accent);
+    text-align: left;
+
+}
+
+.border_decoration {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 25px;
+    border: 2px double #fff;
+}
+
+
+.content {
+    width: 100%;
+    margin: 50px;
+    padding: 0px 20px;
+}
+
+.content ul {
+    margin: 20px auto;
+}
+
+.content li {
+    list-style: disc;
+    padding: 5px 0px;
+    margin-left: 15px;
+}
+
+.content h3 {
+    color: var(--accent);
+}
+
+
+
+/*--------- SHOP LIST ----------*/
+#shop_list {
+    text-align: center;
+    font-size: smaller;
+    position: relative;
+}
+
+#shop_list .midashi::before {
+    content: "SHOP LIST";
+}
+
+
+.shops {
+    margin: 40px auto;
+}
+
+.shop_block {
+    display: flex;
+}
+
+.shop_block h4 {
+    color: var(--accent);
+}
+
+section {
+    width: 280px;
+    background-color: var(--bg2);
+    margin: 10px 10px;
+    text-align: left;
+}
+
+section img {
+    width: 100%;
+}
+
+section h4 {
+    padding: 15px 15px;
+
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section p {
+    padding: 10px 15px 0px 15px;
+    margin-top: 0px;
+}
+
+/*--------- ACCESS ---------*/
+#access {
+    margin: auto;
+    position: relative;
+}
+
+#access .midashi::before {
+    content: "ACCESS";
+}
+
+#access .flex_two {
+    justify-content: space-between;
+}
+
+#access img {
+    width: 100%;
+}
+
+#access a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+#access h4 {
+    color: var(--accent);
+}
+
+#access .flex_two {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#access .content {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-----------スクロールトップボタン-----------*/
+
+.button {
+    background-color: #0707087d;
+    position: fixed;
+    text-align: center;
+    right: 15px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #fff;
+    border-radius: 10rem;
+
+    /*デフォルトで非表示にする*/
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+
+}
+
+
+
+/*このクラスが付与されると表示する*/
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----スクロールトップボタンここまで----*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'100,
+        'GRAD'0,
+        'opsz'48;
+
+    font-size: 42px;
+    padding: auto;
+    margin: 8px 0px 0px 0px;
+
+    transition: .3s;
+}
+
+.material-symbols-outlined:hover {
+    margin: 0px 0px 0px 0px;
+}
+
+span :hover {
+    transform: translateY(-10px);
+}
+
+/* ----------------------------
+           フッター
+----------------------------- */
+footer {
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+footer img {
+    width: 300px;
+    margin: 5px 0px;
+}
+
+footer ul img {
+    width: 32px;
+    height: 32px;
+}
+
+footer ul {
+    display: flex;
+    margin: 10px 0px;
+}
+
+footer li {
+    margin: 10px 20px 10px 0px;
+}
+
+.linklist {
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-size: smaller;
+    margin: 20px 0px;
+}
+
+.linklist ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+footer a {
+    color: #7d7d84;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+#copy {
+    text-align: center;
+    font-size: 12px;
+    color: #616168;
+}
+
+
+/* ------------------------------
+        全体アニメーション用
+------------------------------- */
+.content, .float {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1.5s, visibility 1.5s, transform 1.5s;
+}
+
+
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.c_is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
