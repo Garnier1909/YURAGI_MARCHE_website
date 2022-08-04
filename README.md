@@ -1,1 +1,3 @@
-# YURAGI_MARCHE_website
+# YURAGI MARCHÈ　プロモーションサイト
+
+『YURAGI MARCHÈ』という、キャンドルのイベントを想定したプロモーションサイトです。
